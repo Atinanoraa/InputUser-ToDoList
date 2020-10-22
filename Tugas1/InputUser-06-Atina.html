@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan User Input</title>
+    <style>
+        div{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>XI RPL1/06</h1>
+    <h3>Pendaftaran hiGirls!</h3>
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" id="nama" placeholder="Masukkan nama"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="email" id="email" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Negara</td>
+                <td>:</td>
+                <td><select id="negara">
+                    <option value="Indonesia" selected>Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Singapura">Singapura</option>
+                    <option value="Jepang">Jepang</option>
+                    <option value="Rusia">Rusia</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Tahun Lahir</td>
+                <td>:</td>
+                <td><select id="tahun">
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004" selected>2004</option>
+                    <option value="2005">2005</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="jk" value="Pria">Pria</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="radio" name="jk" value="Wanita">Wanita</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="radio" name="jk" value="Tak Terdefinisi">Tak Terdefinisi</td>
+            </tr>
+        </table>
+    <button onclick="data()">Daftar</button>
+    <div id="hasil"></div>
+<script src="inputUser.js"></script>
+</body>
+</html>
